@@ -1,13 +1,7 @@
+@use './utilities/variables' as v;
+
 /* Definimos las Custom properties */
 :root {
-  /* Colores */
-  --b-1: #282c33;
-  --b-2: #c778dd;
-  --b-3: #abb2bf;
-  --b-4: #222;
-  --negro: #000;
-  --blanco: #fff;
-
   /* Tipografía */
   --tipo-principal: 'Poppins', sans-serif;
   --tipo-secundaria: 'Poppins', sans-serif;
@@ -23,10 +17,10 @@
   width: 1rem;
 }
 ::-webkit-scrollbar-track {
-  background: var(--b-4); /* color of the tracking area */
+  background: v.$b-4; /* color of the tracking area */
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--b-2); /* color of the scroll thumb */
+  background-color: v.$b-2; /* color of the scroll thumb */
   // border-radius: 20px; /* roundness of the scroll thumb */
 }
 
@@ -136,8 +130,8 @@ q:after {
 
 /* (Opcional) Configuramos el texto que seleccionamos */
 ::selection {
-  background-color: var(--b-2);
-  color: var(--b-1);
+  background-color: v.$b-2;
+  color: v.$b-1;
 }
 
 /* Nivelamos problemas de tipografías y colocación de formularios */
@@ -178,7 +172,7 @@ body {
   min-height: 100vh;
   font-size: 100%;
   font-family: var(--tipo-principal);
-  color: var(--b-3);
+  color: v.$b-3;
   /* (Opcional) */
   hyphens: auto;
   /* (Opcional) */
@@ -187,7 +181,7 @@ body {
   -webkit-font-smoothing: antialiased;
   /* (Opcional) */
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--b-1);
+  background-color: v.$b-1;
 }
 
 @mixin mediaQuery($maxWidth: 920px) {
