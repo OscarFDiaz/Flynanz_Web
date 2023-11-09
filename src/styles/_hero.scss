@@ -1,0 +1,25 @@
+@use 'utilities/variables' as v;
+@import 'utilities/mixins';
+
+.hero {
+  @include container(1rem);
+  @include flex(column, space-between, center, center);
+  gap: 2rem;
+  &__picture {
+    width: 90%;
+    background: linear-gradient(180deg, rgba(17, 17, 17, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  &__subtitle {
+    @include font(1rem, 300, none);
+    text-align: center;
+    text-wrap: balance;
+  }
+  &__title {
+    @include font(5rem, 500, none);
+    color: v.$blanco;
+    text-align: center;
+    text-wrap: balance;
+  }
+}

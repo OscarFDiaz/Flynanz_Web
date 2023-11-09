@@ -1,0 +1,41 @@
+@use 'utilities/variables' as v;
+@import 'utilities/mixins';
+
+.list {
+  &__anchor {
+    &:hover {
+      color: v.$blanco;
+    }
+    &--download {
+      @include font(_, 500, uppercase);
+      @include flex(_, space-around, center, center);
+
+      background-color: white;
+      border-radius: 2rem;
+      color: v.$b-1;
+      gap: 1rem;
+      padding: 1rem 2rem;
+
+      &:hover {
+        color: v.$b-4;
+      }
+    }
+  }
+  &__item {
+    // PENDIENTE
+  }
+}
+.navigator {
+  @include container(2rem);
+  @include flex(row, space-between, center, center);
+
+  &__list {
+    @include flex(row, space-around, center, center);
+    @include font(1.2rem, 300, uppercase);
+
+    gap: 5rem;
+  }
+  &__picture {
+    width: 180px;
+  }
+}

@@ -1,2 +1,5 @@
 @use 'reset';
-@use './utilities/variables';
+@use 'navbar';
+@use 'hero';
+@use 'utilities/mixins';
+@use 'utilities/variables';

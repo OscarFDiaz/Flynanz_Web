@@ -9,7 +9,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 1rem;
+  width: 0.78rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -17,7 +17,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(221, 201, 120); /* color of the scroll thumb */
+  background-color: rgb(49, 49, 49); /* color of the scroll thumb */
 }
 
 /* (Opcional) Las adaptamos al modo oscuro */
@@ -122,8 +122,8 @@ q:after {
 
 /* (Opcional) Configuramos el texto que seleccionamos */
 ::selection {
-  background-color: rgb(221, 201, 120);
-  color: hsl(60, 5%, 8%);
+  background-color: rgb(49, 49, 49);
+  color: rgb(21, 21, 19);
 }
 
 /* Nivelamos problemas de tipografías y colocación de formularios */
@@ -172,7 +172,110 @@ body {
   -webkit-font-smoothing: antialiased;
   /* (Opcional) */
   -moz-osx-font-smoothing: grayscale;
-  background-color: hsl(60, 5%, 8%);
+  background-color: rgb(21, 21, 19);
+}
+
+.list__anchor:hover {
+  color: #fff;
+}
+.list__anchor--download {
+  font-family: Poppins;
+  font-size: _;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: _;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  border-radius: 2rem;
+  color: rgb(21, 21, 19);
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+.list__anchor--download:hover {
+  color: #222;
+}
+.navigator {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+@media (max-width: 760px) {
+  .navigator {
+    padding: 1rem;
+  }
+}
+.navigator__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  font-family: Poppins;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  gap: 5rem;
+}
+.navigator__picture {
+  width: 180px;
+}
+
+.hero {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  gap: 2rem;
+}
+@media (max-width: 760px) {
+  .hero {
+    padding: 1rem;
+  }
+}
+.hero__picture {
+  width: 90%;
+  background: linear-gradient(180deg, rgb(17, 17, 17) 0%, rgba(0, 0, 0, 0) 100%);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.hero__subtitle {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: none;
+  text-align: center;
+  text-wrap: balance;
+}
+.hero__title {
+  font-family: Poppins;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: none;
+  color: #fff;
+  text-align: center;
+  text-wrap: balance;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,38 @@
+@mixin font($size: inherit, $weight, $transform) {
+  font-family: Poppins;
+  font-size: $size; //1.5rem
+  font-style: normal;
+  font-weight: $weight;
+  line-height: normal;
+  text-transform: $transform;
+}
+
+@mixin flex($dir: row, $justify: space-around, $align: center, $content: center) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $justify;
+  align-items: $align;
+  align-content: $content;
+}
+
+@mixin media($maxWidth: 920px) {
+  @media (max-width: $maxWidth) {
+    @content;
+  }
+}
+
+@mixin container($padding: 32px 0) {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $padding;
+  @include media(760px) {
+    padding: 1rem;
+  }
+}
+
+@mixin hoverNone {
+  @media (hover: none) {
+    @content;
+  }
+}
