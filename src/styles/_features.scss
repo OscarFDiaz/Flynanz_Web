@@ -1,0 +1,84 @@
+@use 'utilities/variables' as v;
+@import 'utilities/mixins';
+
+.features {
+  @include boxContainer(4rem 1rem 1rem);
+  background: linear-gradient(
+    to bottom,
+    #10100e 0%,
+    #10100e 80%,
+    #f5f5f5 80%,
+    #f5f5f5 100%
+  );
+  border-right: 1rem solid v.$b-5;
+  border-left: 1rem solid v.$b-5;
+  &__container {
+    @include container(0 1rem 1rem);
+    @include flex(column, space-between, center, center);
+    gap: 4rem;
+  }
+  &__header {
+    @include flex(row, space-between, center, center);
+    width: 100%;
+  }
+  &__item {
+    @include flex(column, center, center, center);
+    gap: 1rem;
+    padding: 4rem 2rem;
+    background-color: v.$blanco;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 0.3em;
+  }
+  &__item-description {
+    @include font(1rem, 400, none);
+    text-align: center;
+    text-wrap: balance;
+    color: v.$b-6;
+  }
+  &__item-icon {
+    background-color: v.$negro;
+    padding: 2rem;
+    border-radius: 50%;
+    color: v.$blanco;
+
+    &--deg1 {
+      background: linear-gradient(270deg, #170633 -0.29%, #cec7b4 100%);
+    }
+    &--deg2 {
+      background: linear-gradient(270deg, #da85bd -0.29%, #608dc0 100%);
+    }
+    &--deg3 {
+      background: linear-gradient(270deg, #c49030 -0.29%, #a1a985 100%);
+    }
+    &--deg4 {
+      background: linear-gradient(270deg, #5aa313 -0.29%, #00a3d5 100%);
+    }
+    &--deg5 {
+      background: linear-gradient(270deg, #006e66 -0.29%, #89db2b 100%);
+    }
+    &--deg6 {
+      background: linear-gradient(270deg, #666d71 -0.29%, #aaa8ef 100%);
+    }
+  }
+
+  &__item-title {
+    @include font(1.4rem, 500, none);
+    color: v.$negro;
+    text-align: center;
+    text-wrap: balance;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+  &__subtitle {
+    max-width: 40ch;
+    text-wrap: balance;
+  }
+  &__title {
+    @include font(4.5rem, 500, none);
+    color: v.$blanco;
+  }
+}

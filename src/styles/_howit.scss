@@ -2,7 +2,7 @@
 @import 'utilities/mixins';
 
 .howit {
-  @include boxContainer(1rem);
+  @include boxContainer(1rem 1rem 0);
   background-color: v.$b-5;
   &__container {
     @include container(2rem 1rem 0rem);
