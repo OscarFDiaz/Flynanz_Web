@@ -2,12 +2,18 @@
 @import 'utilities/mixins';
 
 .hero {
-  @include container(1rem);
-  @include flex(column, space-between, center, center);
-  gap: 2rem;
+  @include boxContainer(1rem);
+  background-color: v.$b-2;
+  border-right: 1rem solid v.$b-5;
+  border-left: 1rem solid v.$b-5;
+  &__container {
+    @include container(1rem);
+    @include flex(column, space-between, center, center);
+    gap: 2rem;
+  }
   &__picture {
     width: 90%;
-    background: linear-gradient(180deg, rgba(17, 17, 17, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(180deg, rgb(23 23 23) 0%, rgba(0, 0, 0, 0) 100%);
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
   }

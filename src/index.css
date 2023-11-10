@@ -244,6 +244,14 @@ body {
 
 .hero {
   width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #10100e;
+  border-right: 1rem solid #f5f5f5;
+  border-left: 1rem solid #f5f5f5;
+}
+.hero__container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
@@ -255,13 +263,13 @@ body {
   gap: 2rem;
 }
 @media (max-width: 760px) {
-  .hero {
+  .hero__container {
     padding: 1rem;
   }
 }
 .hero__picture {
   width: 90%;
-  background: linear-gradient(180deg, rgb(17, 17, 17) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(180deg, rgb(23, 23, 23) 0%, rgba(0, 0, 0, 0) 100%);
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
 }
