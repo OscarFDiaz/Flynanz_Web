@@ -2,7 +2,7 @@ import mock from '../../assets/mock_howit.png';
 
 export const HowItWorks = () => {
   return (
-    <section className="howit">
+    <section className="howit" id="HOW">
       <div className="howit__container">
         <h2 className="howit__title">How it works</h2>
         <h2 className="howit__subtitle">

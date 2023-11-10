@@ -2,7 +2,7 @@ import mock from '../../assets/mock_hero.png';
 
 export const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="HOME">
       <div className="hero__container">
         <h1 className="hero__title">Personal finances made simple</h1>
         <h2 className="hero__subtitle">
