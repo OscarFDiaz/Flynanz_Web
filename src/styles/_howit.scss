@@ -1,0 +1,59 @@
+@use 'utilities/variables' as v;
+@import 'utilities/mixins';
+
+.howit {
+  @include boxContainer(1rem);
+  background-color: v.$b-5;
+  &__container {
+    @include container(2rem 1rem 0rem);
+    @include flex(column, space-between, center, center);
+    gap: 2rem;
+  }
+  &__info {
+    @include flex(row, space-between, center, center);
+    gap: 2rem;
+  }
+  &__picture {
+  }
+  &__steps {
+    @include flex(column, space-between, center, center);
+    gap: 3rem;
+  }
+  &__subtitle {
+    @include font(1rem, 400, none);
+    text-align: center;
+    text-wrap: balance;
+    color: v.$b-6;
+  }
+  &__title {
+    @include font(4.5rem, 500, none);
+    color: v.$negro;
+  }
+}
+.steps {
+  @include flex(row, space-between, center, center);
+  gap: 2rem;
+  &__info {
+    @include flex(column, space-between, start, center);
+    gap: 1rem;
+  }
+  &__number {
+    @include font(1rem, 400, none);
+    background-color: v.$b-1;
+    border-radius: 50%;
+    color: v.$blanco;
+    line-height: 2rem;
+    min-height: 4rem;
+    min-width: 4rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  &__text {
+    @include font(1rem, 400, none);
+    color: v.$b-6;
+  }
+  &__title {
+    @include font(1.5rem, 500, none);
+    color: v.$negro;
+  }
+}
