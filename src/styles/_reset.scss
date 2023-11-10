@@ -181,7 +181,7 @@ body {
   -webkit-font-smoothing: antialiased;
   /* (Opcional) */
   -moz-osx-font-smoothing: grayscale;
-  background-color: v.$b-1;
+  background-color: v.$b-5;
 }
 
 @mixin mediaQuery($maxWidth: 920px) {

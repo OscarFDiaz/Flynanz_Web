@@ -8,7 +8,7 @@ export const Hero = () => {
         Be in control of your expenses and effectively manage your personal finances.
       </h2>
       <picture className="hero__picture">
-        <img src={mock} alt="Flynanz mockup" />
+        <img src={mock} alt="Flynanz mockup" className="hero__image" />
       </picture>
     </section>
   );

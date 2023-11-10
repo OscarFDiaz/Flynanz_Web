@@ -11,6 +11,9 @@
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
   }
+  &__image {
+    -webkit-mask-image: linear-gradient(to top, transparent 8%, black 50%);
+  }
   &__subtitle {
     @include font(1rem, 300, none);
     text-align: center;

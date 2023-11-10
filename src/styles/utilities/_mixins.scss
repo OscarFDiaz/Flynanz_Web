@@ -21,6 +21,12 @@
   }
 }
 
+@mixin boxContainer($padding: 16px 0) {
+  width: 100%;
+  margin: 0 auto;
+  padding: $padding;
+}
+
 @mixin container($padding: 32px 0) {
   width: 100%;
   max-width: 1200px;

@@ -26,8 +26,16 @@
   }
 }
 .navigator {
-  @include container(2rem);
-  @include flex(row, space-between, center, center);
+  @include boxContainer(1rem);
+  background-color: v.$b-2;
+  border-right: 1rem solid v.$b-5;
+  border-left: 1rem solid v.$b-5;
+  border-top: 1rem solid v.$b-5;
+
+  &__container {
+    @include container(2rem);
+    @include flex(row, space-between, center, center);
+  }
 
   &__list {
     @include flex(row, space-around, center, center);
