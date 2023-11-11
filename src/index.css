@@ -472,19 +472,19 @@ body {
   color: #fff;
 }
 .features__item-icon--deg1 {
-  background: linear-gradient(270deg, #170633 -0.29%, #cec7b4 100%);
+  background-image: linear-gradient(316deg, #c20114 0%, #e8c547 74%);
 }
 .features__item-icon--deg2 {
-  background: linear-gradient(270deg, #da85bd -0.29%, #608dc0 100%);
+  background-image: linear-gradient(315deg, #6daddb 0%, #313131 74%);
 }
 .features__item-icon--deg3 {
-  background: linear-gradient(270deg, #c49030 -0.29%, #a1a985 100%);
+  background-image: linear-gradient(315deg, #0beef9 0%, #48a9fe 74%);
 }
 .features__item-icon--deg4 {
-  background: linear-gradient(270deg, #5aa313 -0.29%, #00a3d5 100%);
+  background-image: linear-gradient(315deg, #378b29 0%, #74d680 74%);
 }
 .features__item-icon--deg5 {
-  background: linear-gradient(270deg, #006e66 -0.29%, #89db2b 100%);
+  background-image: linear-gradient(315deg, #d3d3d3 0%, #ff9ff3 74%);
 }
 .features__item-icon--deg6 {
   background: linear-gradient(270deg, #666d71 -0.29%, #aaa8ef 100%);
