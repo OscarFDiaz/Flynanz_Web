@@ -1,0 +1,66 @@
+@use 'utilities/variables' as v;
+@import 'utilities/mixins';
+
+.download {
+  @include boxContainer(0 1rem 0);
+  background: linear-gradient(to top, #10100e 0%, #10100e 30%, #f5f5f5 30%, #f5f5f5 100%);
+
+  &__container {
+    @include container(0);
+    @include flex(row, space-between, center, center);
+    gap: 2rem;
+    margin-top: -2rem;
+  }
+  &__content-container {
+    width: 90%;
+    margin: 0 auto;
+    background: linear-gradient(
+      to top,
+      #151513 0%,
+      #151513 60%,
+      #f5f5f5 60%,
+      #f5f5f5 100%
+    );
+  }
+
+  &__anchor {
+    &:hover {
+      color: v.$blanco;
+    }
+    &--download {
+      @include font(_, 500, uppercase);
+      @include flex(_, space-around, center, center);
+
+      background-color: white;
+      border-radius: 2rem;
+      color: v.$b-1;
+      gap: 1rem;
+      padding: 1rem 2rem;
+
+      &:hover {
+        color: v.$b-4;
+      }
+    }
+  }
+  &__mock {
+  }
+  &__picture {
+  }
+  &__subtitle {
+    @include font(1rem, 400, none);
+    text-align: left;
+    text-wrap: balance;
+    color: v.$b-3;
+  }
+  &__text-container {
+    @include flex(column, space-between, flex-start, center);
+    gap: 2rem;
+    align-self: end;
+    padding-bottom: 2rem;
+  }
+  &__title {
+    @include font(4.5rem, 500, none);
+    color: v.$blanco;
+    text-wrap: balance;
+  }
+}

@@ -624,4 +624,93 @@ body {
   color: #222;
 }
 
+.scroll-carousel-slider {
+  align-items: center;
+}
+
+.download {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem 0;
+  background: linear-gradient(to top, #10100e 0%, #10100e 30%, #f5f5f5 30%, #f5f5f5 100%);
+}
+.download__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  gap: 2rem;
+  margin-top: -2rem;
+}
+@media (max-width: 760px) {
+  .download__container {
+    padding: 1rem;
+  }
+}
+.download__content-container {
+  width: 90%;
+  margin: 0 auto;
+  background: linear-gradient(to top, #151513 0%, #151513 60%, #f5f5f5 60%, #f5f5f5 100%);
+}
+.download__anchor:hover {
+  color: #fff;
+}
+.download__anchor--download {
+  font-family: Poppins;
+  font-size: _;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: _;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  border-radius: 2rem;
+  color: #151513;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+.download__anchor--download:hover {
+  color: #222;
+}
+.download__subtitle {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: none;
+  text-align: left;
+  text-wrap: balance;
+  color: #abb2bf;
+}
+.download__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
+  gap: 2rem;
+  align-self: end;
+  padding-bottom: 2rem;
+}
+.download__title {
+  font-family: Poppins;
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: none;
+  color: #fff;
+  text-wrap: balance;
+}
+
 /*# sourceMappingURL=index.css.map */

@@ -1,3 +1,4 @@
+import { Download } from './components/Download/Download';
 import { Features } from './components/Features/Features';
 import { Hero } from './components/Hero/Hero';
 import { HowItWorks } from './components/HowItWorks/HowItWorks';
@@ -12,6 +13,7 @@ export const Flynanz = () => {
       <HowItWorks />
       <Features />
       <Reviews />
+      <Download />
     </>
   );
 };

@@ -32,7 +32,12 @@ export const Navbar = () => {
           </li>
         </ul>
 
-        <a href="#DOWNLOAD" className="list__anchor list__anchor--download">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.oscar.diaz"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="list__anchor list__anchor--download"
+        >
           Download
           <IconExternalLink />
         </a>
