@@ -2,7 +2,7 @@
   "homepage": "https://OscarFDiaz.github.io/Flynanz_Web/",
   "name": "flynanz",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
