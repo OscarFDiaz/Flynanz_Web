@@ -14,7 +14,7 @@ export const Reviews = () => {
   // Convierte el objeto JSON en un objeto tipado
   const reviews: { [key: string]: Review } = reviewsData;
   return (
-    <section className="reviews" id="#REVIEWS">
+    <section className="reviews" id="REVIEWS">
       <div className="reviews__container">
         <h2 className="reviews__title">Reviews</h2>
         <p className="reviews__subtitle">

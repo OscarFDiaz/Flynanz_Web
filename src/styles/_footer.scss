@@ -1,2 +1,36 @@
 @use 'utilities/variables' as v;
 @import 'utilities/mixins';
+
+.footer {
+  @include boxContainer(4rem 1rem 1rem);
+  background: v.$b-2;
+  &__container {
+    @include container(0 1rem 1rem);
+    @include flex(column, space-between, center, center);
+    gap: 2rem;
+  }
+  &__divider {
+    width: 100%;
+    height: 2px;
+    background: v.$b-3;
+  }
+  &__nav {
+    @include flex(row, space-between, center, center);
+    width: 100%;
+    &--brands {
+      @include flex(row, space-between, center, center);
+    }
+  }
+  &__nav-li {
+  }
+  &__nav-ul {
+    @include font(1rem, 400, uppercase);
+    @include flex(row, space-between, center, center);
+    gap: 2rem;
+  }
+  &__picture {
+    max-width: 300px;
+  }
+  &__thanks {
+  }
+}
