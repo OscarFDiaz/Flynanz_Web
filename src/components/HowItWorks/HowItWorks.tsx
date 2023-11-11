@@ -17,27 +17,28 @@ export const HowItWorks = () => {
             <div className="steps">
               <div className="steps__number">01.</div>
               <div className="steps__info">
-                <h2 className="steps__title">Sign Up</h2>
+                <h2 className="steps__title">Dowload the app</h2>
                 <p className="steps__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Download the app from your device's app store. (Only Playstore)
                 </p>
               </div>
             </div>
             <div className="steps">
               <div className="steps__number">02.</div>
               <div className="steps__info">
-                <h2 className="steps__title">Sign Up</h2>
+                <h2 className="steps__title">Use it</h2>
                 <p className="steps__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Set your goals, create your wallets, see your expenses and define your
+                  spending limits.
                 </p>
               </div>
             </div>
             <div className="steps">
               <div className="steps__number">03.</div>
               <div className="steps__info">
-                <h2 className="steps__title">Sign Up</h2>
+                <h2 className="steps__title">Done!</h2>
                 <p className="steps__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  You're all set! Explore all the features and enjoy the experience.
                 </p>
               </div>
             </div>
