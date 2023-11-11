@@ -5,10 +5,10 @@ export const HowItWorks = () => {
     <section className="howit" id="HOW">
       <div className="howit__container">
         <h2 className="howit__title">How it works</h2>
-        <h2 className="howit__subtitle">
+        <p className="howit__subtitle">
           Flynanz is an application that will make it easier for you to save the amount of
           money you need.
-        </h2>
+        </p>
         <div className="howit__info">
           <picture className="howit__picture">
             <img src={mock} alt="howit" loading="lazy" />

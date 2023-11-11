@@ -1,0 +1,64 @@
+@use 'utilities/variables' as v;
+@import 'utilities/mixins';
+
+.reviews {
+  @include boxContainer(3rem 0 0);
+  background-color: v.$b-5;
+  &__title {
+    @include font(4.5rem, 500, none);
+    color: v.$negro;
+  }
+  &__subtitle {
+    @include font(1rem, 400, none);
+    text-align: center;
+    text-wrap: balance;
+    color: v.$b-6;
+  }
+  &__container {
+    @include flex(column, space-between, center, center);
+
+    width: 100%;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+  &__item {
+    @include flex(column, space-between, flex-start, center);
+    gap: 1rem;
+    min-width: 400px;
+    background-color: v.$blanco;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  &__user {
+    @include flex(row, space-between, center, center);
+  }
+  &__user-image {
+    width: 4rem;
+  }
+  &__user-innerimage {
+    border-radius: 50%;
+  }
+  &__user-name {
+    @include font(1.8rem, 400, none);
+    color: v.$negro;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &__user-review {
+    @include font(1rem, 400, none);
+    text-align: left;
+    text-wrap: balance;
+    color: v.$b-6;
+  }
+  &__user-stars {
+    @include font(1rem, 400, none);
+    @include flex(row, space-between, center, center);
+    gap: 0.5rem;
+    text-align: left;
+    text-wrap: balance;
+    color: v.$b-4;
+  }
+}
