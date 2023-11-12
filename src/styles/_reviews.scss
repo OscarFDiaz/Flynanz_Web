@@ -32,12 +32,16 @@
   }
   &__user {
     @include flex(row, space-between, center, center);
+    gap: 1rem;
   }
   &__user-image {
-    width: 4rem;
+    height: 2.5rem;
+    width: auto;
   }
   &__user-innerimage {
     border-radius: 50%;
+    height: 2.5rem;
+    aspect-ratio: 1;
   }
   &__user-name {
     @include font(1.8rem, 400, none);

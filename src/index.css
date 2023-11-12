@@ -575,12 +575,16 @@ body {
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  gap: 1rem;
 }
 .reviews__user-image {
-  width: 4rem;
+  height: 2.5rem;
+  width: auto;
 }
 .reviews__user-innerimage {
   border-radius: 50%;
+  height: 2.5rem;
+  aspect-ratio: 1;
 }
 .reviews__user-name {
   font-family: Poppins;
