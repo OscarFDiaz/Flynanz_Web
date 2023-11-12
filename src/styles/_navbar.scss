@@ -7,8 +7,8 @@
       color: v.$blanco;
     }
     &--download {
-      @include font(_, 500, uppercase);
-      @include flex(_, space-around, center, center);
+      @include font(1rem, 500, uppercase);
+      @include flex(row, space-around, center, center);
 
       background-color: white;
       border-radius: 2rem;

@@ -1,10 +1,5 @@
-import {
-  IconBrandBehance,
-  IconBrandGithub,
-  IconBrandLinkedin,
-  IconBrandTwitter,
-} from '@tabler/icons-react';
 import flynanz_logo from '../../assets/flynanz_logo.svg';
+import { Github, LinkedIn, Twitter, Behance } from '../../assets/Icons/';
 
 export const Footer = () => {
   return (
@@ -38,7 +33,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <IconBrandTwitter />
+                <Twitter />
               </a>
             </li>
             <li className="footer__nav-li">
@@ -47,7 +42,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <IconBrandLinkedin stroke={1} width={1} />
+                <LinkedIn />
               </a>
             </li>
             <li className="footer__nav-li">
@@ -56,7 +51,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <IconBrandBehance />
+                <Behance />
               </a>
             </li>
             <li className="footer__nav-li">
@@ -65,7 +60,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <IconBrandGithub />
+                <Github />
               </a>
             </li>
           </ul>

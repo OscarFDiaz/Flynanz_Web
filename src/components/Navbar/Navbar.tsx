@@ -1,5 +1,5 @@
-import { IconExternalLink } from '@tabler/icons-react';
 import flynanz_logo from '../../assets/flynanz_logo.svg';
+import { ExternalLink } from '../../assets/Icons/ExternalLink';
 
 export const Navbar = () => {
   return (
@@ -39,7 +39,7 @@ export const Navbar = () => {
           className="list__anchor list__anchor--download"
         >
           Download
-          <IconExternalLink />
+          <ExternalLink />
         </a>
       </div>
     </nav>

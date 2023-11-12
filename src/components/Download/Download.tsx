@@ -1,5 +1,5 @@
-import { IconExternalLink } from '@tabler/icons-react';
 import mock from '../../assets/mock_download.png';
+import { ExternalLink } from '../../assets/Icons';
 
 export const Download = () => {
   return (
@@ -19,7 +19,7 @@ export const Download = () => {
               className="download__anchor download__anchor--download"
             >
               Download
-              <IconExternalLink />
+              <ExternalLink />
             </a>
           </div>
           <div className="download__mock">
