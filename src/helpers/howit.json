@@ -1,0 +1,17 @@
+{
+  "1": {
+    "step": "01.",
+    "title": "Download the app",
+    "text": "Download the app from your device's app store. (Only PlayStore)"
+  },
+  "2": {
+    "step": "02.",
+    "title": "Use it",
+    "text": "Set your goals, create your wallets, see your expenses and define your spending limits."
+  },
+  "3": {
+    "step": "03.",
+    "title": "Done!",
+    "text": "You're all set! Explore all the features and enjoy the experience."
+  }
+}

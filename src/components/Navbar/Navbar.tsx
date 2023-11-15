@@ -1,6 +1,7 @@
 import flynanz_logo from '../../assets/flynanz_logo.svg';
 import { ExternalLink } from '../../assets/Icons/ExternalLink';
 import NavLinks from '../../helpers/navigation.json';
+import { NavItem } from './NavItem';
 
 type Link = {
   anchor: string;
@@ -20,13 +21,7 @@ export const Navbar = () => {
         <ul className="navigator__list">
           {Object.keys(links).map((key) => {
             const current = links[key];
-            return (
-              <li className="list__item" key={key}>
-                <a href={current.anchor} className="list__anchor">
-                  {current.content}
-                </a>
-              </li>
-            );
+            return <NavItem anchor={current.anchor} content={current.content} />;
           })}
         </ul>
 

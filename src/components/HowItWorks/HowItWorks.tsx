@@ -1,6 +1,16 @@
 import mock from '../../assets/mock_howit.png';
+import Steps from '../../helpers/howit.json';
+import { HowItStep } from './HowItStep';
+
+type stepType = {
+  step: string;
+  title: string;
+  text: string;
+};
 
 export const HowItWorks = () => {
+  const step: { [key: string]: stepType } = Steps;
+
   return (
     <section className="howit" id="HOW">
       <div className="howit__container">
@@ -14,34 +24,16 @@ export const HowItWorks = () => {
             <img src={mock} alt="howit" loading="lazy" />
           </picture>
           <aside className="howit__steps">
-            <div className="steps">
-              <div className="steps__number">01.</div>
-              <div className="steps__info">
-                <h2 className="steps__title">Dowload the app</h2>
-                <p className="steps__text">
-                  Download the app from your device's app store. (Only Playstore)
-                </p>
-              </div>
-            </div>
-            <div className="steps">
-              <div className="steps__number">02.</div>
-              <div className="steps__info">
-                <h2 className="steps__title">Use it</h2>
-                <p className="steps__text">
-                  Set your goals, create your wallets, see your expenses and define your
-                  spending limits.
-                </p>
-              </div>
-            </div>
-            <div className="steps">
-              <div className="steps__number">03.</div>
-              <div className="steps__info">
-                <h2 className="steps__title">Done!</h2>
-                <p className="steps__text">
-                  You're all set! Explore all the features and enjoy the experience.
-                </p>
-              </div>
-            </div>
+            {Object.keys(step).map((key) => {
+              const current = step[key];
+              return (
+                <HowItStep
+                  step={current.step}
+                  title={current.title}
+                  text={current.text}
+                />
+              );
+            })}
           </aside>
         </div>
       </div>
