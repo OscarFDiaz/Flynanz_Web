@@ -1,7 +1,15 @@
 import flynanz_logo from '../../assets/flynanz_logo.svg';
 import { ExternalLink } from '../../assets/Icons/ExternalLink';
+import NavLinks from '../../helpers/navigation.json';
+
+type Link = {
+  anchor: string;
+  content: string;
+};
 
 export const Navbar = () => {
+  const links: { [key: string]: Link } = NavLinks;
+
   return (
     <nav className="navigator">
       <div className="navigator__container">
@@ -10,26 +18,16 @@ export const Navbar = () => {
         </picture>
 
         <ul className="navigator__list">
-          <li className="list__item">
-            <a href="#HOME" className="list__anchor">
-              Home
-            </a>
-          </li>
-          <li className="list__item">
-            <a href="#HOW" className="list__anchor">
-              How it works
-            </a>
-          </li>
-          <li className="list__item">
-            <a href="#FEATURES" className="list__anchor">
-              Features
-            </a>
-          </li>
-          <li className="list__item">
-            <a href="#REVIEWS" className="list__anchor">
-              Reviews
-            </a>
-          </li>
+          {Object.keys(links).map((key) => {
+            const current = links[key];
+            return (
+              <li className="list__item" key={key}>
+                <a href={current.anchor} className="list__anchor">
+                  {current.content}
+                </a>
+              </li>
+            );
+          })}
         </ul>
 
         <a
