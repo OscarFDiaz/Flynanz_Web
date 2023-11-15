@@ -20,7 +20,7 @@ export const Reviews = () => {
         <p className="reviews__subtitle">
           Flynanz users are delighted! Check out what they're saying about our app.
         </p>
-        <ScrollCarousel autoplaySpeed={8} speed={7} margin={50}>
+        <ScrollCarousel autoplay autoplaySpeed={8} speed={7} margin={50}>
           {Object.keys(reviews).map((key) => {
             const review = reviews[key];
             return (
