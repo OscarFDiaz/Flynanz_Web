@@ -22,6 +22,9 @@
     }
   }
   &__nav-li {
+    &:hover {
+      color: v.$blanco;
+    }
   }
   &__nav-ul {
     @include font(1rem, 400, uppercase);
@@ -30,7 +33,5 @@
   }
   &__picture {
     max-width: 300px;
-  }
-  &__thanks {
   }
 }
