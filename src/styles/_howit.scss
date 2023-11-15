@@ -4,20 +4,57 @@
 .howit {
   @include boxContainer(1rem 1rem 0);
   background-color: v.$b-5;
+
+  @include media(425px) {
+    padding: 0;
+  }
+
   &__container {
     @include container(2rem 1rem 0rem);
     @include flex(column, space-between, center, center);
     gap: 2rem;
+
+    @include media(425px) {
+      gap: 1rem;
+    }
   }
   &__info {
     @include flex(row, space-between, center, center);
     gap: 2rem;
+
+    @include media(425px) {
+      flex-direction: column;
+    }
   }
   &__picture {
+    @include media(1024px) {
+      align-self: flex-end;
+      overflow: hidden;
+    }
+  }
+  &__image {
+    @include media(1024px) {
+      width: 130%;
+      max-width: none;
+    }
+
+    @include media(768px) {
+      width: 220%;
+      object-position: -220px;
+    }
+
+    @include media(425px) {
+      width: 200%;
+      object-position: -190px;
+    }
   }
   &__steps {
     @include flex(column, space-between, center, center);
     gap: 3rem;
+
+    @include media(1024px) {
+      padding-bottom: 1rem;
+    }
   }
   &__subtitle {
     @include font(1rem, 400, none);
@@ -26,8 +63,12 @@
     color: v.$b-6;
   }
   &__title {
-    @include font(4.5rem, 500, none);
+    @include font(4.5rem, 600, none);
     color: v.$negro;
+
+    @include media(425px) {
+      text-align: center;
+    }
   }
 }
 .steps {

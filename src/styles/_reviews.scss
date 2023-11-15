@@ -5,7 +5,7 @@
   @include boxContainer(3rem 0 0);
   background-color: v.$b-5;
   &__title {
-    @include font(4.5rem, 500, none);
+    @include font(4.5rem, 600, none);
     color: v.$negro;
   }
   &__subtitle {
@@ -20,6 +20,10 @@
     width: 100%;
     margin: 0 auto;
     gap: 2rem;
+
+    @include media(425px) {
+      gap: 1rem;
+    }
   }
   &__item {
     @include flex(column, space-between, flex-start, center);

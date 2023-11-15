@@ -21,7 +21,7 @@ export const HowItWorks = () => {
         </p>
         <div className="howit__info">
           <picture className="howit__picture">
-            <img src={mock} alt="howit" loading="lazy" />
+            <img src={mock} alt="howit" loading="lazy" className="howit__image" />
           </picture>
           <aside className="howit__steps">
             {Object.keys(step).map((key) => {

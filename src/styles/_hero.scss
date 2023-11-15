@@ -6,16 +6,30 @@
   background-color: v.$b-2;
   border-right: 1rem solid v.$b-5;
   border-left: 1rem solid v.$b-5;
+
+  @include media(425px) {
+    border-right: 0.5rem solid v.$b-5;
+    border-left: 0.5rem solid v.$b-5;
+  }
+
   &__container {
     @include container(1rem);
     @include flex(column, space-between, center, center);
     gap: 2rem;
+
+    @include media(425px) {
+      padding: 0;
+    }
   }
   &__picture {
     width: 90%;
     background: linear-gradient(180deg, rgb(23 23 23) 0%, rgba(0, 0, 0, 0) 100%);
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
+
+    @include media(425px) {
+      width: 100%;
+    }
   }
   &__image {
     -webkit-mask-image: linear-gradient(to top, transparent 8%, black 50%);
@@ -30,5 +44,9 @@
     color: v.$blanco;
     text-align: center;
     text-wrap: balance;
+
+    @include media(425px) {
+      font-size: 3rem;
+    }
   }
 }

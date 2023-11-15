@@ -24,7 +24,12 @@ export const Download = () => {
           </div>
           <div className="download__mock">
             <picture className="download__picture">
-              <img src={mock} alt="download mockup" loading="lazy" />
+              <img
+                src={mock}
+                alt="download mockup"
+                loading="lazy"
+                className="download__image"
+              />
             </picture>
           </div>
         </div>

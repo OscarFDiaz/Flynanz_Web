@@ -5,11 +5,24 @@
   @include boxContainer(0 1rem 0);
   background: linear-gradient(to top, #10100e 0%, #10100e 30%, #f5f5f5 30%, #f5f5f5 100%);
 
+  @include media(1300px) {
+    padding: 0;
+  }
+
+  @include media(425px) {
+    margin-top: 3rem;
+  }
+
   &__container {
     @include container(0);
     @include flex(row, space-between, center, center);
     gap: 2rem;
     margin-top: -2rem;
+
+    @include media(425px) {
+      flex-direction: column;
+      padding-bottom: 0;
+    }
   }
   &__content-container {
     width: 100%;
@@ -21,6 +34,20 @@
       #f5f5f5 60%,
       #f5f5f5 100%
     );
+
+    @include media(1024px) {
+      background: linear-gradient(
+        to top,
+        #151513 0%,
+        #151513 80%,
+        #f5f5f5 80%,
+        #f5f5f5 100%
+      );
+    }
+
+    @include media(425px) {
+      background: linear-gradient(to top, #151513 0%, #151513 100%);
+    }
   }
 
   &__anchor {
@@ -28,8 +55,8 @@
       color: v.$blanco;
     }
     &--download {
-      @include font(_, 500, uppercase);
-      @include flex(_, space-around, center, center);
+      @include font(1rem, 500, uppercase);
+      @include flex(row, space-around, center, center);
 
       background-color: white;
       border-radius: 2rem;
@@ -41,11 +68,39 @@
         color: v.$b-1;
         background-color: v.$b-5;
       }
+
+      @include media(425px) {
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+      }
     }
   }
   &__mock {
+    @include media(1300px) {
+      width: 90%;
+    }
+  }
+  &__image {
+    @include media(768px) {
+      max-width: none;
+      align-self: flex-end;
+      width: 145%;
+      object-position: -64px 0px;
+    }
+
+    @include media(425px) {
+      width: 130%;
+    }
   }
   &__picture {
+    overflow: hidden;
+
+    @include media(425px) {
+      margin-top: -7rem;
+      overflow-y: hidden;
+      z-index: 0;
+    }
   }
   &__subtitle {
     @include font(1rem, 400, none);
@@ -58,10 +113,25 @@
     gap: 2rem;
     align-self: end;
     padding-bottom: 3rem;
+
+    @include media(1024px) {
+      gap: 1rem;
+      padding-bottom: 2rem;
+      padding-left: 2rem;
+    }
+
+    @include media(425px) {
+      padding: 1rem;
+      z-index: 1;
+    }
   }
   &__title {
     @include font(4.5rem, 500, none);
     color: v.$blanco;
     text-wrap: balance;
+
+    @include media(425px) {
+      font-size: 4rem;
+    }
   }
 }
