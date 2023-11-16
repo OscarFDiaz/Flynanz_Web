@@ -28,6 +28,7 @@ export const HowItWorks = () => {
               const current = step[key];
               return (
                 <HowItStep
+                  key={key}
                   step={current.step}
                   title={current.title}
                   text={current.text}

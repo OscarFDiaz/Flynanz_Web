@@ -21,7 +21,9 @@ export const Navbar = () => {
         <ul className="navigator__list">
           {Object.keys(links).map((key) => {
             const current = links[key];
-            return <NavItem anchor={current.anchor} content={current.content} />;
+            return (
+              <NavItem key={key} anchor={current.anchor} content={current.content} />
+            );
           })}
         </ul>
 
